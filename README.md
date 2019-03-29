@@ -168,6 +168,11 @@ Below are listed the optimal settings for each API key.
 
 #### API key associated to your Main account
 
+Filters:
+
+*   Add your whitelisted wallet to the Bitcoin Withdrawal Address Filter
+*   Optionally add your server's IP address to the IP Address Filter
+
 Permissions:
 
 *   Account balance
@@ -175,12 +180,13 @@ Permissions:
 *   Transfer balance from main account
 *   BTC withdrawal
 
+#### API key associated to your Sub account
+
+Suggestion: while creating this API key, take note of the sub account numeric ID that appears in the dropdown menu, as you will need it later.
+
 Filters:
 
-*   Add your whitelisted wallet to the Bitcoin Withdrawal Address Filter
 *   Optionally add your server's IP address to the IP Address Filter
-
-#### API key associated to your Sub account
 
 Permissions:
 
@@ -188,10 +194,6 @@ Permissions:
 *   User transactions
 *   Buy limit/marker order
 *   Transfer to main account
-
-Filters:
-
-*   Optionally add your server's IP address to the IP Address Filter
 
 Host the source code on a web server
 ------------------------------------
