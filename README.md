@@ -217,6 +217,10 @@ Here you will configure:
 
 Once done, rename this file to "config.php" on your server.
 
+Open the Database Manager (usually PhpMyAdmin) on your server, and import "database.sql".
+
+Optionally, you can now configure an username and a password (that's useful if you want to enable the web reports).
+
 Schedule the recurring execution
 --------------------------------
 
