@@ -18,7 +18,7 @@ This requires a lot of **discipline**, and there is some **work** to do on each 
 
 That approach is prone to forgetfulness, mistakes, and temptations to steer away from the original plan.
 
-That’s simply **a recipe for failure**, and indeed, many people fail to save any significant amount for these exact reasons.
+Thatâ€™s simply **a recipe for failure**, and indeed, many people fail to save any significant amount for these exact reasons.
 
 You don't want to find yourself among those people who **fail** to save because of a **flawed** approach, do you?
 
@@ -228,13 +228,13 @@ Schedule the recurring execution
 
 While you may set up the cron job to be executed from within the hosting environment itself, it is best to use at least two external services to run it. Otherwise, if the server is down, for example, you risk not getting any notification at all.
 
-You can sign up for free accounts at two external cron job services. I recommend [https://www.easycron.com/](https://www.easycron.com/) and [https://cron-job.org/en/](https://cron-job.org/en/)
+You can sign up for free accounts at two external cron job services. I recommendÂ [https://www.easycron.com/](https://www.easycron.com/)Â andÂ [https://cron-job.org/en/](https://cron-job.org/en/)
 
 Assuming that the public address for your server is for example https://mybitcoinsavings.myhosting.com/, then you need to instruct those cron services to request the URL https://mybitcoinsavings.myhosting.com/run.php at least once a day (once an hour is probably better; you won'really need anything more frequent than that).
 
 You can visit that URL on your browser, to make sure everything is working as intended.
 
-If you read "SaveinBitcoin was executed." at the end, it works.
+If you read "SaveinBitcoin was executed" at the end, it works.
 
 Bank transfers
 --------------
@@ -269,16 +269,16 @@ The following resources were important to help developing SaveinBitcoin:
 
 * [Ultimate MySQL wrapper class](https://github.com/GerHobbelt/ultimatemysql)
 * [PHPMailer](https://github.com/PHPMailer/PHPMailer)
-* [Blockchain.com](https://www.blockchain.com/) for providing an handy endpoint for querying the Bitcoin blockchain
+* [Blockchain.com](https://www.blockchain.com/)Â for providing an handy endpoint for querying the Bitcoin blockchain
 
 Please donate
 =============
 
 This project was **published as a gift to the Bitcoin community**.
 
-So far, SaveinBitcoin took me 24 hours for its developement, plus 18 hours to produce the documents, the website, and to carry on the project.
+So far, SaveinBitcoin took me 27 hours for its developement, plus 21 hours to produce the documents, the website, and to carry on the project.
 
-That's over 42 hours (and counting) of work I carried out mostly on weekends, **with love**.
+That's over 48 hours (and counting) of work I carried out mostly on weekends, **with love**.
 
 > If you like this project and want to support its [further development](https://saveinbitcoin.com/roadmap/) (and also its author), please consider making a donation.
 
