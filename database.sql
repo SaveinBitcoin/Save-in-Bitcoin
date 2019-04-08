@@ -1,14 +1,12 @@
 SET NAMES utf8;
 SET time_zone = '+00:00';
 
-DROP TABLE IF EXISTS `alerts`;
 CREATE TABLE `alerts` (
   `alert` varchar(255) NOT NULL,
   `datetime` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
-DROP TABLE IF EXISTS `currentbalance`;
 CREATE TABLE `currentbalance` (
   `account` varchar(255) NOT NULL,
   `currency` varchar(3) NOT NULL,
@@ -18,7 +16,6 @@ CREATE TABLE `currentbalance` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
-DROP TABLE IF EXISTS `deposits`;
 CREATE TABLE `deposits` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `datetime` datetime NOT NULL,
@@ -30,7 +27,6 @@ CREATE TABLE `deposits` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
-DROP TABLE IF EXISTS `fees`;
 CREATE TABLE `fees` (
   `pair` varchar(255) NOT NULL,
   `fee` decimal(4,2) NOT NULL,
@@ -38,7 +34,20 @@ CREATE TABLE `fees` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
-DROP TABLE IF EXISTS `trades`;
+CREATE TABLE `ticker` (
+  `pair` varchar(6) NOT NULL,
+  `high` decimal(8,2) NOT NULL,
+  `last` decimal(8,2) NOT NULL,
+  `bid` decimal(8,2) NOT NULL,
+  `vwap` decimal(8,2) NOT NULL,
+  `low` decimal(8,2) NOT NULL,
+  `ask` decimal(8,2) NOT NULL,
+  `open` decimal(8,2) NOT NULL,
+  `datetime` datetime NOT NULL,
+  UNIQUE KEY `pair` (`pair`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
 CREATE TABLE `trades` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `status` varchar(255) NOT NULL,
@@ -53,7 +62,6 @@ CREATE TABLE `trades` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
-DROP TABLE IF EXISTS `walletlog`;
 CREATE TABLE `walletlog` (
   `txid` varchar(255) NOT NULL,
   `height` int(11) NOT NULL,
@@ -65,7 +73,6 @@ CREATE TABLE `walletlog` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
-DROP TABLE IF EXISTS `withdrawals`;
 CREATE TABLE `withdrawals` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `datetime` datetime NOT NULL,
